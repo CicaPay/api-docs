@@ -1,0 +1,65 @@
+{
+  "name": "cicapay/cicapay-php",
+  "type": "library",
+  "description": "A PHP wrapper for the cicapay.com v1 API.",
+  "homepage": "https://cicapay.com/apidoc-intro",
+  "time": "2023-03-01",
+  "keywords": [
+    "CicaPay",
+    "cryptocurrency",
+    "crypto",
+    "payment gateway",
+    "payment method",
+    "payment processor",
+    "merchant",
+    "paypal",
+    "mobile money",
+    "moov",
+    "mtn",
+    "php",
+    "api",
+    "orange",
+    "celtis",
+    "currency",
+    "web3",
+    "Paiement", 
+    "paiement en ligne", 
+    "Bénin",
+        "Plateforme de paiement en ligne en Afrique et dans le monde entier", 
+        "Paiement Bénin",
+        "Passerelle de paiement en ligne", 
+        "CicaPay", 
+        "cicapay", 
+        "cicapay.com",
+        "Marchand en ligne", 
+        "payment gateway", 
+        "payment gateway Africa",
+        "online payment gateway", 
+        "mobile payments", 
+        "best payment gateway",
+        "cryptocurrency payment gateway",
+        "moov money", 
+        "client php", 
+        "api", 
+        "php client", 
+        "library"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "CicaPay",
+      "email": "support@cicapay.com",
+      "homepage": "https://cicapay.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+        "psr-4": {
+            "CicaPay\\": "CicaPay/src"
+        }
+    }
+  
+}
