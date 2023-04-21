@@ -1,1 +1,1 @@
-bpay.bryocorp.com
+cicapay.com
