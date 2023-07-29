@@ -6,8 +6,8 @@ class CicaPayAPI
      * Add your API Key From cicapay.com
      * Set The "Mode", Request Environment
      */
-    private $apikey = "85f9b64152d53b56556109f5000afc3c14dd32915297cf51"; // live
-    //private $apikey = "338b3f59da3616713e362b9dced27bb4fe9eefa9ecf5f380"; // test
+    private $apikey = ""; // live
+    //private $apikey = ""; // test
     private $mode = "live";  // "test" or "live"
     private $request_handler;
 
@@ -182,7 +182,7 @@ class CicaPayAPI
      * 
      * @return array|object
      * Successful result includes the following values (sample):
-     *      - status "EXCECUTED"
+     *      - status "SUCCESSFUL"
      * 
      * @throws Exception
      */
@@ -198,7 +198,8 @@ class CicaPayAPI
      *
      * @return array|object
      * Successful result includes the following values (sample):
-     *      - availableBalance "5000000000"
+     *      - moovAvailableBalance "5000000000"
+     *      - mtnAvailableBalance "5000000000"
      *      
      * @throws Exception
      */
