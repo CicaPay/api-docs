@@ -41,7 +41,7 @@ class CicaPayAPIPRO
     public function payIn(int $mobile_money_number, string $network, string $description, string $first_name, string $last_name, string $email, string $customer_company, array $order)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant_own/$this->mode/pay_in/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant_own/$this->mode/pay_in/$this->apikey";
         
         $data = array(
             'network' => $network,
@@ -81,7 +81,7 @@ class CicaPayAPIPRO
     public function payInCrypto(float $amount, string $currency1, string $currency2, string $buyer_email, string $description)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant_crypto/$this->mode/pay_in/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant_crypto/$this->mode/pay_in/$this->apikey";
         
         $data = array(
             'currency1' => $currency1,
@@ -98,7 +98,7 @@ class CicaPayAPIPRO
     private function pay_out_request(string $network, int $number, int $amount, string $first_name, string $last_name, string $email)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant_own/$this->mode/pay_out/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant_own/$this->mode/pay_out/$this->apikey";
 
         $data = array(
             'mobile_money_number' => $number,
