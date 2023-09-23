@@ -15,7 +15,7 @@ var data = {
     "description": "Achat de matériels",
 };
 
-fetch(`https://cicapay.com/e_merchant_crypto/${mode}/pay_in/${apiKey}`, {
+fetch(`https://api.cicapay.com/e_merchant_crypto/${mode}/pay_in/${apiKey}`, {
     method: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
