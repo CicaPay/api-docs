@@ -7,7 +7,7 @@ const apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 const mode = "live"; // test or live
 
 // GET YOUR ACCOUNT BALANCE 
-fetch(`https://cicapay.com/e_merchant_own/${mode}/check_balance/${apiKey}`, {
+fetch(`https://api.cicapay.com/e_merchant_own/${mode}/check_balance/${apiKey}`, {
     method: "GET",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
