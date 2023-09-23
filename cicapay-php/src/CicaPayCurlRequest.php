@@ -40,7 +40,7 @@ class CicaPayCurlRequest
     {
         $cResource = curl_init();
 
-        curl_setopt($cResource, CURLOPT_URL, "https://cicapay.com/e_merchant/$this->mode/$request/$this->apikey/$id");
+        curl_setopt($cResource, CURLOPT_URL, "https://api.cicapay.com/e_merchant/$this->mode/$request/$this->apikey/$id");
 
         curl_setopt($cResource, CURLOPT_RETURNTRANSFER, true);
 
@@ -59,7 +59,7 @@ class CicaPayCurlRequest
         $request = "check_balance";
         $cResource = curl_init();
 
-        curl_setopt($cResource, CURLOPT_URL, "https://cicapay.com/e_merchant_own/$this->mode/$request/$this->apikey");
+        curl_setopt($cResource, CURLOPT_URL, "https://api.cicapay.com/e_merchant_own/$this->mode/$request/$this->apikey");
 
         curl_setopt($cResource, CURLOPT_RETURNTRANSFER, true);
 
@@ -77,7 +77,7 @@ class CicaPayCurlRequest
     {
         $cResource = curl_init();
 
-        curl_setopt($cResource, CURLOPT_URL, "https://cicapay.com/e_merchant_own/$this->mode/$request/$this->apikey/$id");
+        curl_setopt($cResource, CURLOPT_URL, "https://api.cicapay.com/e_merchant_own/$this->mode/$request/$this->apikey/$id");
 
         curl_setopt($cResource, CURLOPT_RETURNTRANSFER, true);
 
