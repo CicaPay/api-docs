@@ -21,7 +21,7 @@ class CicaPayAPI
     private function payS(string $description, string $success_url, string $cancel_url, string $meTa, string $payWith, string $currency, array $order)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant/$this->mode/pay_in1/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant/$this->mode/pay_in1/$this->apikey";
 
         $data = array(
             'description' => $description,
@@ -39,7 +39,7 @@ class CicaPayAPI
     private function paySt(string $trans_id, string $description, string $success_url, string $cancel_url, string $payWith, string $currency, array $order)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant/$this->mode/pay_in2/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant/$this->mode/pay_in2/$this->apikey";
 
         $data = array(
             'trans_id' => $trans_id,
@@ -96,7 +96,7 @@ class CicaPayAPI
     private function pay_out_request(string $network, int $number, int $amount, string $first_name, string $last_name, string $email)
     {
         // Define the API url
-        $api_url = "https://cicapay.com/e_merchant_own/$this->mode/pay_out/$this->apikey";
+        $api_url = "https://api.cicapay.com/e_merchant_own/$this->mode/pay_out/$this->apikey";
 
         $data = array(
             'mobile_money_number' => $number,
