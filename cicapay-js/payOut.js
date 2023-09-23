@@ -18,7 +18,7 @@ const data =
     "network": "moov_bj"
 };
 
-fetch(`https://cicapay.com/e_merchant_own/${mode}/pay_out/${apiKey}`, {
+fetch(`https://api.cicapay.com/e_merchant_own/${mode}/pay_out/${apiKey}`, {
     method: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
