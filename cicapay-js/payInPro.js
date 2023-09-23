@@ -35,7 +35,7 @@ var data = {
     "order": order
 };
 
-fetch(`https://cicapay.com/e_merchant_own/${mode}/pay_in/${apiKey}`, {
+fetch(`https://api.cicapay.com/e_merchant_own/${mode}/pay_in/${apiKey}`, {
     method: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
