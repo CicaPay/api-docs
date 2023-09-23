@@ -1,1 +1,1 @@
-cicapay.com
+cicapay.com/apidoc
