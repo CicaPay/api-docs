@@ -11,7 +11,7 @@ const mode = "live"; // test or live
 
 var transaction_id = "BP64241A8741CC9";
 
-fetch(`https://cicapay.com/e_merchant_own/${mode}/get_transaction_info/${apiKey}/${transaction_id}`, {
+fetch(`https://api.cicapay.com/e_merchant_own/${mode}/get_transaction_info/${apiKey}/${transaction_id}`, {
     method: "GET",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
