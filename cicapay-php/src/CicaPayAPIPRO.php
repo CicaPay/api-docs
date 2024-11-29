@@ -38,7 +38,7 @@ class CicaPayAPIPRO
      * 
      * @throws Exception
      */
-    public function payIn(int $mobile_money_number, string $network, string $description, string $first_name, string $last_name, string $email, string $customer_company, array $order)
+    public function payIn($mobile_money_number, string $network, string $description, string $first_name, string $last_name, string $email, string $customer_company, array $order)
     {
         // Define the API url
         $api_url = "https://api.cicapay.com/e_merchant_own/$this->mode/pay_in/$this->apikey";
@@ -95,7 +95,7 @@ class CicaPayAPIPRO
     }
     
     
-    private function pay_out_request(string $network, int $number, int $amount, string $first_name, string $last_name, string $email)
+    private function pay_out_request(string $network, $number, int $amount, string $first_name, string $last_name, string $email)
     {
         // Define the API url
         $api_url = "https://api.cicapay.com/e_merchant_own/$this->mode/pay_out/$this->apikey";
@@ -131,7 +131,7 @@ class CicaPayAPIPRO
      * 
      * @throws Exception
      */
-    public function payOut(string $network, int $number, int $amount, string $first_name, string $last_name, string $email)
+    public function payOut(string $network, $number, int $amount, string $first_name, string $last_name, string $email)
     {
 
 
